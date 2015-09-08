@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/alert_light_frame">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_light_frame">
+
+            <TextView
+                android:id="@+id/snippet_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:text="Review: Hi-Res-capable, DualCoil-packing T20 in-ear headphones"
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/snippet_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:text="Both the packaging and the product page proudly display the Hi-Res symbol, meaning that the T20s conform to high resolution audio standards laid out by the Japan Audio Society – so it only seemed right and proper to head for some high resolution FLAC..." />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/snippet_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:text="Gizmag"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/secondary_text_light" />
+
+                <TextView
+                    android:id="@+id/snippet_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/snippet_publisher"
+                    android:scrollHorizontally="false"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/tertiary_text_dark"
+                    android:text="Tue, 28 Jul 2015 16:43:23 -0700" />
+
+                <Button
+                    android:id="@+id/snippet_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/snippet_date"
+                    android:background="@android:drawable/ic_menu_search"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</TableRow>

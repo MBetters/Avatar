@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Avatar Prototype" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all triples" />
+
+    <EditText
+        android:id="@+id/rdf_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="subject"
+        android:inputType="textUri" />
+
+    <EditText
+        android:id="@+id/rdf_predicate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="predicate"
+        android:inputType="textUri" />
+
+    <EditText
+        android:id="@+id/rdf_object"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="object"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/addTriple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add triple" />
+
+    <EditText
+        android:id="@+id/query_text"
+        android:hint="query..."
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submitQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Select" />
+
+    <Button
+        android:id="@+id/submitUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Update" />
+
+    <ListView
+        android:id="@+id/statementList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
