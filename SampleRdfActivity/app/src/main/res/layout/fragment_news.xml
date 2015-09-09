@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_getStories"
+            android:textSize="12dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="Fetch News"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_getStories"
+            android:id="@+id/news_status_text"
+            android:text=""/>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_getStories"
+            android:id="@+id/snippets_table">
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
